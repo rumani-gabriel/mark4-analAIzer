@@ -2,3 +2,5 @@ python-dotenv
 schedule
 Pillow
 mss
+firebase-admin
+google-generativeai

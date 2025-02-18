@@ -18,6 +18,12 @@ EMAIL_SMTP_PORT = os.getenv("SMTP_PORT") # Puerto SMTP
 EMAIL_SMTP_USERNAME = os.getenv("SMTP_USERNAME") # Usuario SMTP
 EMAIL_SMTP_PASSWORD = os.getenv("SMTP_PASSWORD") # Contraseña SMTP
 
+# --- Configuración de Firebase (NUEVO - Ruta al archivo de credenciales) ---
+FIREBASE_CREDENTIALS_PATH = os.getenv("FIREBASE_CREDENTIALS_PATH")
+
+# --- Configuración del Nombre del Dispositivo (NUEVO) ---
+DISPOSITIVO = os.getenv("DISPOSITIVO", "Dispositivo_Predeterminado") # Nombre por defecto: Dispositivo_Predeterminado
+
 # Directorio para guardar las capturas de pantalla (opcional)
 SCREENSHOTS_DIR = 'screenshots'
 if not os.path.exists(SCREENSHOTS_DIR):
